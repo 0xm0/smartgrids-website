@@ -95,10 +95,10 @@ setPaused(event.data.paused);
 name="viewport"
 content="width=device-width, initial-scale=1, viewport-fit=cover"
 />
-<title>Aurora Link — Satellite</title>
+<title>SmartGrids AI — Distributed Sovereign Compute</title>
 <meta
 name="description"
-content="Aurora Link builds the orbital layer that keeps Earth continuously connected, continuously observed, and continuously understood."
+content="SmartGrids AI replaces hyperscale data centres with distributed, solar-powered micro-compute nodes. 100% Australian-owned sovereign infrastructure."
 />
 <meta name="theme-color" content="#000000" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -2650,9 +2650,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
 
   <body>
     <!-- ══════ LOADER ══════ -->
-    <div id="loader" aria-label="Loading Aurora Link">
-      <div class="wordmark loader-brand">Aurora Link</div>
-      <div class="loader-coordinate">EARTH / LOW ORBIT</div>
+    <div id="loader" aria-label="Loading SmartGrids AI">
+      <div class="wordmark loader-brand">SmartGrids AI</div>
+      <div class="loader-coordinate">AUSTRALIA / SOVEREIGN MESH</div>
       <div class="loader-in">
         <div class="loader-orbit" aria-hidden="true">
           <svg viewBox="0 0 184 184">
@@ -2665,16 +2665,16 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             <circle class="sat" cx="92" cy="92" r="2"/>
           </svg>
         </div>
-        <div class="loader-kicker">An Earth-sized connection</div>
-        <div class="loader-mark">Establishing orbit.</div>
+        <div class="loader-kicker">A continent-wide compute fabric</div>
+        <div class="loader-mark">Establishing mesh.</div>
         <div class="loader-status">
-          <span id="loadStatus" role="status" aria-live="polite">Preparing flight systems</span>
+          <span id="loadStatus" role="status" aria-live="polite">Initialising compute nodes</span>
           <span class="loader-num" aria-hidden="true"><span id="loadNum">000</span><small> / 100</small></span>
         </div>
-        <div class="loader-bar" id="loadProgress" role="progressbar" aria-label="Loading orbital scene" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="loadFill"></i></div>
+        <div class="loader-bar" id="loadProgress" role="progressbar" aria-label="Loading mesh view" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="loadFill"></i></div>
         <div class="loader-actions" id="loadActions" hidden><button type="button" id="loadContinue">Continue to page</button><button type="button" id="loadRetry">Try again</button></div>
       </div>
-      <div class="loader-meta"><span>Connectivity beyond the horizon</span><span>1,450 KM ABOVE / ALWAYS WITHIN REACH</span></div>
+      <div class="loader-meta"><span>Sovereignty beyond the cloud</span><span>ZERO WATER / ZERO COMPROMISE</span></div>
     </div>
     <script id="aurora-loading-controller">
     (() => {
@@ -2711,7 +2711,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
       }
       function fail() {
         if (finished || completing) return;
-        status.textContent = 'The orbital view is taking longer.';
+        status.textContent = 'The mesh view is taking longer.';
         actions.hidden = false;
       }
       const watchdog = setTimeout(fail, 12000);
@@ -2721,7 +2721,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
         progress, fail,
         complete() {
           if (finished || completing) return;
-          progress(1, 'Orbit established');
+          progress(1, 'Mesh established');
           completing = true;
           actions.hidden = true;
           clearTimeout(watchdog);
@@ -2745,7 +2745,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
 
     <!-- ══════ NAV ══════ -->
     <header class="nav" id="nav">
-      <a href="#top" class="wordmark nav-mark" data-cursor="">Aurora Link</a>
+      <a href="#top" class="wordmark nav-mark" data-cursor="">SmartGrids AI</a>
       <!-- Segmented dock. The first item used to repeat the wordmark in words; as a
        mark chip it still points at #top and still answers to the scroll-spy, and
        the row reads as logo + four destinations. -->
@@ -2754,7 +2754,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           class="nav-link nav-chip"
           href="#top"
           data-cursor=""
-          aria-label="Aurora Link"
+          aria-label="SmartGrids AI"
         >
           <svg class="ni" viewBox="0 0 16 16" aria-hidden="true">
             <circle cx="8" cy="8" r="3.1"></circle>
@@ -2773,28 +2773,28 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             <path d="M4.6 6.4 8 2.8l3.4 3.6"></path>
             <path d="M3.4 14.2h9.2"></path>
           </svg>
-          <span class="nt">LIFT SYSTEMS</span>
+          <span class="nt">INFRASTRUCTURE</span>
         </a>
         <a class="nav-link is-active" href="#satellite" data-cursor="">
           <svg class="ni" viewBox="0 0 16 16" aria-hidden="true">
             <rect x="6.2" y="6.2" width="3.6" height="3.6" rx=".6"></rect>
             <path d="M6.2 8H2.4M13.6 8H9.8M2.4 6.1v3.8M13.6 6.1v3.8"></path>
           </svg>
-          <span class="nt">SATELLITE</span>
+          <span class="nt">TECHNOLOGY</span>
         </a>
         <a class="nav-link" href="#deepspace" data-cursor="">
           <svg class="ni" viewBox="0 0 16 16" aria-hidden="true">
             <circle cx="8" cy="8" r="5.4"></circle>
             <path d="M4.9 3.5A5.4 5.4 0 0 0 8 13.4"></path>
           </svg>
-          <span class="nt">DEEP SPACE</span>
+          <span class="nt">SOVEREIGNTY</span>
         </a>
         <a class="nav-link" href="#newsroom" data-cursor="">
           <svg class="ni" viewBox="0 0 16 16" aria-hidden="true">
             <path d="M3.6 2.6h6.1l2.7 2.7v8.1H3.6z"></path>
             <path d="M5.8 7.6h4.4M5.8 10.2h4.4"></path>
           </svg>
-          <span class="nt">NEWSROOM</span>
+          <span class="nt">SOLUTIONS</span>
         </a>
       </nav>
       <div class="nav-lang">
@@ -2814,11 +2814,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
     </header>
 
     <div class="menu" id="menu">
-      <a href="#top">Aurora Link</a>
-      <a href="#lift">Lift Systems</a>
-      <a href="#satellite">Satellite</a>
-      <a href="#deepspace">Deep Space</a>
-      <a href="#newsroom">Newsroom</a>
+      <a href="#top">SmartGrids AI</a>
+      <a href="#lift">Infrastructure</a>
+      <a href="#satellite">Technology</a>
+      <a href="#deepspace">Sovereignty</a>
+      <a href="#newsroom">Solutions</a>
     </div>
 
     <main class="shell" id="top">
@@ -2839,24 +2839,24 @@ html.is-ready #hero .cx-stage > * { animation: none; }
 
         <div class="cx-stage" id="heroIn">
           <h1 class="cx-h1">
-            The orbital layer that
-            <span class="dim">keeps Earth in view.</span>
+            The distributed layer that
+            <span class="dim">keeps Australia sovereign.</span>
           </h1>
 
           <p class="lede">
-            A continuously reconfiguring mesh at 1,450&nbsp;km —
+            A continuously reconfiguring mesh of solar-powered nodes —
             <br />
-            connectivity, sensing and analysis on one shell.
+            compute, sovereignty and resilience on one fabric.
           </p>
           <p class="facts">
-            1,450&nbsp;km, no seams
+            10x cheaper inference
             <br />
-            Sub-metre, day or night
+            Zero water, zero carbon
           </p>
 
           <p class="bigtag">
-            <span class="dim">The joint orbital venture</span>
-            of the Calyx group.
+            <span class="dim">The sovereign compute platform</span>
+            by RapidStart.
           </p>
 
           <div class="actions">
@@ -2865,13 +2865,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 <a class="ign" id="ignBtn" href="#lift">
                   <span class="ign-well">
                     <canvas id="ignGl" aria-hidden="true"></canvas>
-                    <span class="ign-label">Book a launch slot</span>
+                    <span class="ign-label">Start building today</span>
                   </span>
                 </a>
               </span>
             </span>
             <a class="btn btn-ghost" href="#satellite">
-              Explore the shell
+              Explore the architecture
               <span class="arw">↳</span>
             </a>
           </div>
@@ -2886,9 +2886,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
         style="height:260vh"
       >
         <div class="stage">
-          <div class="chapter-word t-chapter" id="chapterWord">Satellite</div>
+          <div class="chapter-word t-chapter" id="chapterWord">Technology</div>
           <div class="chapter-line t-statement" id="chapterLine">
-            Bind the ground to the sky.
+            Bind the edge to the cloud.
           </div>
         </div>
       </section>
@@ -2898,7 +2898,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
         <div class="stage">
           <div class="stage-pad grid12" style="align-items:center">
             <div class="center-col" style="grid-column:6 / span 4">
-              <p class="t-eyebrow" data-reveal="up-sm">The Continuous Orbit</p>
+              <p class="t-eyebrow" data-reveal="up-sm">The Distributed Mesh</p>
               <h2
                 class="t-h2"
                 style="margin:20px 0 34px"
@@ -2906,16 +2906,15 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="90"
                 data-split="words"
               >
-                Orbital
+                Mesh
                 <br />
                 Connectivity
               </h2>
               <p class="t-body" data-reveal="up" data-delay="200">
-                Operators are placing tens of thousands of relay craft into low
-                Earth orbit and moving the backbone of civil connectivity off
-                the ground entirely. Aircraft, hulls, rolling stock and remote
-                plant now expect the same latency budget as a fibre drop,
-                anywhere on the sphere, at any hour of the day.
+                Enterprises are pouring billions into centralised data centres —
+                single facilities consuming 2,000+ MW of power and 3.5 million
+                litres of water daily. Every byte processed on US-owned
+                infrastructure falls under CLOUD Act jurisdiction.
               </p>
               <p
                 class="t-body"
@@ -2923,10 +2922,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="290"
               >
-                <span class="brandword">Aurora Link</span>
-                builds the layer that makes that ordinary — a continuously
-                reconfiguring mesh of 1,450&nbsp;km craft that hands a session
-                between beams without the user ever seeing a seam.
+                <span class="brandword">SmartGrids AI</span>
+                builds the layer that changes the equation: a continuously
+                reconfiguring mesh of solar-powered 42U compute nodes, air-cooled
+                and grid-independent, distributing workloads across Australian
+                sovereign territory.
               </p>
             </div>
 
@@ -2954,7 +2954,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                     class="card-tag t-mono"
                     style="color:rgba(255,255,255,.9);text-shadow:0 1px 6px #000"
                   >
-                    Polar corridor
+                    Edge node
                   </span>
                 </div>
               </div>
@@ -2985,7 +2985,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                     class="card-tag t-mono"
                     style="color:rgba(255,255,255,.9);text-shadow:0 1px 6px #000"
                   >
-                    Arid basin
+                    Metro cluster
                   </span>
                 </div>
               </div>
@@ -3016,7 +3016,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                     class="card-tag t-mono"
                     style="color:rgba(255,255,255,.9);text-shadow:0 1px 6px #000"
                   >
-                    Air &amp; sea link
+                    National mesh
                   </span>
                 </div>
               </div>
@@ -3040,7 +3040,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             <span
               style="font-size:13px;letter-spacing:.03em;color:rgba(255,255,255,.85)"
             >
-              LEO 1,450 km
+              CPU-NATIVE 850B
             </span>
           </div>
 
@@ -3122,9 +3122,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           >
             <div class="center-col" style="grid-column:8 / span 4">
               <h2 class="t-h2" data-reveal="up" data-split="words">
-                Adaptive,
+                SyntriRX
                 <br />
-                Phased-Array Aperture
+                CPU-Native Inference
               </h2>
               <p
                 class="t-body"
@@ -3132,11 +3132,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="140"
               >
-                A flat aperture that steers electronically rather than
-                mechanically, so it can be bonded to a fuselage, a mast, a
-                locomotive roof or a container lid without a radome or a moving
-                part. Thickness is 41&nbsp;mm; the array tiles outward in
-                modules as a platform needs more gain.
+                An inference engine that runs AI models up to 850 billion
+                parameters directly on standard CPU hardware — eliminating
+                the GPU dependency that locks enterprises into expensive,
+                power-hungry clusters.
               </p>
               <p
                 class="t-body"
@@ -3144,10 +3143,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="230"
               >
-                <span class="brandword">Aurora Link</span>
-                tunes the same aperture family across low-orbit constellations,
-                geostationary wideband and the hybrid handover between them —
-                one panel, three orbital regimes, no re-pointing pause.
+                <span class="brandword">SmartGrids AI</span>
+                deploys SyntriRX across every node in the mesh, delivering
+                10x lower inference costs while supporting full GPU acceleration
+                via NVIDIA L40S through GB300 and AMD MI300X through MI350X
+                when workloads demand it.
               </p>
               <div
                 style="display:flex;gap:44px;margin-top:46px"
@@ -3155,21 +3155,21 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="320"
               >
                 <div>
-                  <div class="t-mono">Aperture depth</div>
+                  <div class="t-mono">Max parameters</div>
                   <div style="font-size:24px;font-weight:200;margin-top:6px">
-                    41 mm
+                    850B
                   </div>
                 </div>
                 <div>
-                  <div class="t-mono">Beams / panel</div>
+                  <div class="t-mono">Cost reduction</div>
                   <div style="font-size:24px;font-weight:200;margin-top:6px">
-                    16
+                    10×
                   </div>
                 </div>
                 <div>
-                  <div class="t-mono">Re-point</div>
+                  <div class="t-mono">Deploy time</div>
                   <div style="font-size:24px;font-weight:200;margin-top:6px">
-                    &lt; 2 ms
+                    5 sec
                   </div>
                 </div>
               </div>
@@ -3189,7 +3189,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           style="padding-block:clamp(96px,14vh,180px);width:100%"
         >
           <div style="grid-column:1 / span 6">
-            <p class="t-eyebrow" data-reveal="up-sm">The Continuous Orbit</p>
+            <p class="t-eyebrow" data-reveal="up-sm">The Intelligence Layer</p>
             <h2
               class="t-h2"
               style="margin:20px 0 40px"
@@ -3199,14 +3199,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               Layered, Always-On
               <br />
-              Communication Payloads
+              Compute Architecture
             </h2>
             <p class="t-body" data-reveal="up" data-delay="190">
-              A single orbital shell cannot serve every latency class at once.
-              Coverage has to be assembled from tiers that talk to each other —
-              low-orbit relays for responsiveness, wideband platforms for bulk,
-              and an in-space fabric that routes between them without ever
-              touching a ground gateway.
+              A single compute fabric cannot serve every workload class with
+              identical guarantees. Sovereignty-critical government data,
+              latency-sensitive AI inference, and cost-optimised batch processing
+              each demand different placement, policy, and execution contracts.
             </p>
             <p
               class="t-body"
@@ -3214,11 +3213,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-reveal="up"
               data-delay="270"
             >
-              <span class="brandword">Aurora Link</span>
-              designs the three payloads that make that fabric possible: an
-              Optical Cross-Link (OCL), an Adaptive Phased Aperture (APA) and an
-              Edge Flight Processor (EFP) — the routing brain that decides, in
-              orbit, where every packet goes next.
+              <span class="brandword">SmartGrids AI</span>
+              orchestrates three core systems in concert — RapidEngine for
+              request intake and API gateway, IPvX for identity and policy
+              intelligence, and iDOE for distributed workload placement — each
+              with a single clear responsibility.
             </p>
 
             <div
@@ -3232,9 +3231,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   data-reveal="rule"
                   data-delay="140"
                 ></div>
-                <div class="t-index">OCL</div>
+                <div class="t-index">RE</div>
                 <div class="t-cap" style="margin-top:10px">
-                  Optical Cross-Link
+                  RapidEngine API Gateway
                 </div>
               </div>
               <div style="grid-column:span 4" data-reveal="up" data-delay="180">
@@ -3244,9 +3243,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   data-reveal="rule"
                   data-delay="240"
                 ></div>
-                <div class="t-index">APA</div>
+                <div class="t-index">IPvX</div>
                 <div class="t-cap" style="margin-top:10px">
-                  Adaptive Phased Aperture
+                  Identity &amp; Policy Layer
                 </div>
               </div>
               <div style="grid-column:span 4" data-reveal="up" data-delay="280">
@@ -3256,9 +3255,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   data-reveal="rule"
                   data-delay="340"
                 ></div>
-                <div class="t-index">EFP</div>
+                <div class="t-index">iDOE</div>
                 <div class="t-cap" style="margin-top:10px">
-                  Edge Flight Processor
+                  Orchestration Engine
                 </div>
               </div>
             </div>
@@ -3277,32 +3276,35 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               <div class="tri-copy" data-tri="0">
                 <h3 class="t-h3" style="color:#fff">
-                  OCL : Optical Cross-Link
+                  RE : RapidEngine Gateway
                 </h3>
                 <p class="t-body" style="margin-top:18px">
-                  Laser terminals that pass traffic craft-to-craft in vacuum, so
-                  a session can cross an ocean without ever descending to a
-                  gateway.
+                  The front door to the mesh. Authenticates every request,
+                  normalises it into a workload specification carrying intent
+                  and policy, then returns structured results with cryptographic
+                  execution receipts.
                 </p>
               </div>
               <div class="tri-copy" data-tri="1">
                 <h3 class="t-h3" style="color:#fff">
-                  APA : Adaptive Phased Aperture
+                  IPvX : Identity &amp; Policy Layer
                 </h3>
                 <p class="t-body" style="margin-top:18px">
-                  Sixteen independently steered beams from one flat panel,
-                  re-tasked in under two milliseconds as platforms move beneath
-                  the footprint.
+                  Not a network protocol — an intelligence layer above IP. Every
+                  workload, service, and node gets a persistent identity with
+                  attached policy, capability declarations, and sovereignty zone.
+                  Resolution runs before any data moves.
                 </p>
               </div>
               <div class="tri-copy" data-tri="2">
                 <h3 class="t-h3" style="color:#fff">
-                  EFP : Edge Flight Processor
+                  iDOE : Orchestration Engine
                 </h3>
                 <p class="t-body" style="margin-top:18px">
-                  The routing brain of the shell — it re-plans the mesh on
-                  board, in flight, and never waits for a decision to arrive
-                  from the ground.
+                  The placement brain. Decides where work runs using two-stage
+                  eliminate-then-rank: first remove every resource that fails
+                  hard sovereignty or security constraints, then optimise
+                  survivors by SLO alignment.
                 </p>
               </div>
             </div>
@@ -3390,7 +3392,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 <img
                   class="ph"
                   src="https://images-assets.nasa.gov/image/jsc2023e064875/jsc2023e064875~medium.jpg"
-                  alt="Optical cross-link"
+                  alt="RapidEngine gateway"
                   loading="lazy"
                   decoding="async"
                   style="width:100%;height:100%;object-fit:cover;display:block"
@@ -3401,7 +3403,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   "
                   sizes="(max-width: 620px) 344px, 194px"
                 />
-                <span class="thumb-label">OCL</span>
+                <span class="thumb-label">RE</span>
               </button>
               <button
                 class="thumb tri-thumb"
@@ -3413,7 +3415,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 <img
                   class="ph"
                   src="https://images-assets.nasa.gov/image/GRC-2019-C-11756/GRC-2019-C-11756~medium.jpg"
-                  alt="Phased-array aperture"
+                  alt="Identity and policy layer"
                   loading="lazy"
                   decoding="async"
                   style="width:100%;height:100%;object-fit:cover;display:block"
@@ -3424,7 +3426,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   "
                   sizes="(max-width: 620px) 344px, 194px"
                 />
-                <span class="thumb-label">APA</span>
+                <span class="thumb-label">IPvX</span>
               </button>
               <button
                 class="thumb tri-thumb"
@@ -3436,7 +3438,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 <img
                   class="ph"
                   src="https://images-assets.nasa.gov/image/KSC-20190404-PH_CSH01_0099/KSC-20190404-PH_CSH01_0099~medium.jpg"
-                  alt="Edge flight processor"
+                  alt="Orchestration engine"
                   loading="lazy"
                   decoding="async"
                   style="width:100%;height:100%;object-fit:cover;display:block"
@@ -3447,7 +3449,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   "
                   sizes="(max-width: 620px) 344px, 194px"
                 />
-                <span class="thumb-label">EFP</span>
+                <span class="thumb-label">iDOE</span>
               </button>
             </div>
 
@@ -3463,7 +3465,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   type="button"
                   data-cursor=""
                 >
-                  <span>OCL</span>
+                  <span>RE</span>
                 </button>
                 <button
                   class="chip tri-chip"
@@ -3471,7 +3473,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   type="button"
                   data-cursor=""
                 >
-                  <span>APA</span>
+                  <span>IPvX</span>
                 </button>
                 <button
                   class="chip tri-chip"
@@ -3479,7 +3481,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   type="button"
                   data-cursor=""
                 >
-                  <span>EFP</span>
+                  <span>iDOE</span>
                 </button>
               </div>
               <div class="pbar"><i id="triBar"></i></div>
@@ -3502,7 +3504,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           </div>
           <div class="stage-pad grid12" style="align-items:center">
             <div class="center-col" style="grid-column:1 / span 4">
-              <p class="t-eyebrow" data-reveal="up-sm">Instrument class</p>
+              <p class="t-eyebrow" data-reveal="up-sm">Verification layer</p>
               <h2
                 class="t-h2"
                 style="margin:20px 0 32px"
@@ -3510,14 +3512,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="90"
                 data-split="words"
               >
-                Planetary Sensing Service
+                Evidence-First Execution
               </h2>
               <p class="t-body" data-reveal="up" data-delay="190">
-                <span class="brandword">Aurora Link</span>
-                flies the full sensing stack rather than a single instrument —
-                visible-band optics, long-wave thermal, and synthetic-aperture
-                radar — so a tasking request is answered by whichever physics
-                can actually see through the conditions on the day.
+                SmartGrids AI generates cryptographic proof for every operation.
+                Where a task was performed, which resources were used, whether
+                policy was followed, and how results can be independently
+                verified — all recorded, all auditable.
               </p>
               <div
                 style="margin-top:44px;display:flex;gap:36px"
@@ -3525,21 +3526,21 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="290"
               >
                 <div>
-                  <div class="t-mono">Revisit</div>
+                  <div class="t-mono">Audit trail</div>
                   <div style="font-size:22px;font-weight:200;margin-top:6px">
-                    4.2 h
+                    100%
                   </div>
                 </div>
                 <div>
-                  <div class="t-mono">Best GSD</div>
+                  <div class="t-mono">Receipt time</div>
                   <div style="font-size:22px;font-weight:200;margin-top:6px">
-                    0.31 m
+                    &lt; 1 sec
                   </div>
                 </div>
                 <div>
-                  <div class="t-mono">Bands</div>
+                  <div class="t-mono">Policy dims</div>
                   <div style="font-size:22px;font-weight:200;margin-top:6px">
-                    3
+                    9
                   </div>
                 </div>
               </div>
@@ -3600,32 +3601,32 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               <div class="mode-copy" data-mode="0">
                 <h3 class="t-statement" style="color:#fff">
-                  Visible band, sunlit passes,
+                  Control plane: accept,
                   <br />
-                  true colour at 0.31 m
+                  decompose, orchestrate
                 </h3>
                 <p class="t-cap" style="margin-top:26px">
-                  VIS — panchromatic and multispectral optics, daylight tasking
+                  RapidEngine + MrSerious + EEV3 — request intake, DAG decomposition, parallel execution with dependency tracking
                 </p>
               </div>
               <div class="mode-copy" data-mode="1">
                 <h3 class="t-statement" style="color:#fff">
-                  Thermal band, through the
+                  Policy plane: determine
                   <br />
-                  darkest part of the night
+                  eligibility before execution
                 </h3>
                 <p class="t-cap" style="margin-top:26px">
-                  TIR — long-wave infrared, day and night, heat as the signal
+                  IPvX + iDOE — sovereignty zone enforcement, capability resolution, two-stage placement
                 </p>
               </div>
               <div class="mode-copy" data-mode="2">
                 <h3 class="t-statement" style="color:#fff">
-                  Radar band, through cloud,
+                  Evidence plane: prove
                   <br />
-                  smoke and storm alike
+                  jurisdiction at every step
                 </h3>
                 <p class="t-cap" style="margin-top:26px">
-                  SAR — synthetic aperture, all-weather, all-illumination
+                  Cryptographic receipts — hardware attestation, data boundary compliance, artifact integrity
                 </p>
               </div>
             </div>
@@ -3736,7 +3737,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               <div
                 style="display:flex;align-items:center;gap:10px;margin-top:9px;justify-content:flex-end"
               >
-                <span class="t-mono">Frame</span>
+                <span class="t-mono">Plane</span>
                 <span
                   class="t-mono"
                   style="color:#000;background:var(--ember);padding:2px 7px"
@@ -3843,11 +3844,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               </div>
             </div>
             <p class="t-mono" style="margin-top:14px">
-              Fig. 01 — Skyframe-M optical bench, flight configuration
+              Fig. 01 — RapidEngine API gateway, production configuration
             </p>
           </div>
           <div style="grid-column:8 / span 5">
-            <p class="t-eyebrow" data-reveal="up-sm">Optical payload</p>
+            <p class="t-eyebrow" data-reveal="up-sm">API gateway</p>
             <h2
               class="t-h2"
               style="margin:20px 0 34px"
@@ -3855,13 +3856,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="90"
               data-split="words"
             >
-              Skyframe Imager
+              RapidEngine
             </h2>
             <p class="t-body" data-reveal="up" data-delay="180">
-              A rigid, athermal optical bench with no moving focus element — the
-              whole assembly holds alignment across a 180&nbsp;K thermal swing,
-              which is what lets a small bus hold sub-metre detail on a slewing
-              pass.
+              A single entry point for every workload on the mesh. RapidEngine
+              authenticates, normalises, and routes — transforming raw API calls
+              into workload specifications that carry intent, policy, and
+              execution constraints as first-class metadata.
             </p>
             <p
               class="t-body"
@@ -3869,10 +3870,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-reveal="up"
               data-delay="250"
             >
-              The design descends from twenty-two years of airborne sensor work
-              at Calyx. Its first orbital variant flew in 2023 and has since
-              returned more than 4.1 million usable scenes without a single
-              re-calibration campaign.
+              The design descends from years of distributed systems engineering
+              at RapidStart. Every request produces a structured result with an
+              execution receipt proving where the work ran, which policy version
+              governed it, and what the verified output was.
             </p>
             <p
               class="t-body"
@@ -3880,8 +3881,8 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-reveal="up"
               data-delay="320"
             >
-              We continue to push the same bench toward wider swath and finer
-              ground sampling, for orbit and for air.
+              We continue to push the gateway toward lower latency, higher
+              throughput, and deeper integration with the policy and evidence planes.
             </p>
           </div>
         </div>
@@ -3923,7 +3924,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             </div>
           </div>
           <div style="grid-column:8 / span 5">
-            <p class="t-eyebrow" data-reveal="up-sm">Radar payload</p>
+            <p class="t-eyebrow" data-reveal="up-sm">Compute hardware</p>
             <h2
               class="t-h2"
               style="margin:20px 0 34px"
@@ -3931,14 +3932,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="90"
               data-split="words"
             >
-              Compact SAR Platform
+              42U Micro-Compute Node
             </h2>
             <p class="t-body" data-reveal="up" data-delay="180">
-              <span class="brandword">Aurora Link</span>
-              is qualifying a radar spacecraft under 138&nbsp;kg — light enough
-              that a single mid-class launcher places nine of them into one
-              plane, and cheap enough that a constellation can be replenished
-              rather than repaired.
+              SmartGrids AI deploys self-contained compute cells in 42U rack
+              form factor — solar-powered with LiFePO4 battery storage,
+              air-cooled with zero water consumption, and mesh-networked via
+              60 GHz wireless links.
             </p>
             <p
               class="t-body"
@@ -3946,11 +3946,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-reveal="up"
               data-delay="250"
             >
-              Bus and payload are one structure, not two. Folding the deployable
-              antenna into the primary load path removed 31&nbsp;kg and an
-              entire separation mechanism, and because it images by radar it
-              works at midnight, in monsoon, and through smoke — at 0.8&nbsp;m
-              resolution.
+              Each node carries three server tiers: 1U relay for mesh gateway
+              and load balancing, 2U CPU tier running SyntriRX inference, and
+              4U GPU tier for training and large-model workloads. Bus and
+              compute are one structure.
             </p>
             <div
               style="display:flex;gap:44px;margin-top:44px"
@@ -3958,21 +3957,21 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="330"
             >
               <div>
-                <div class="t-mono">Wet mass</div>
+                <div class="t-mono">Rack CapEx</div>
                 <div style="font-size:24px;font-weight:200;margin-top:6px">
-                  138 kg
+                  $178K AUD
                 </div>
               </div>
               <div>
-                <div class="t-mono">Resolution</div>
+                <div class="t-mono">Cooling</div>
                 <div style="font-size:24px;font-weight:200;margin-top:6px">
-                  0.8 m
+                  Air only
                 </div>
               </div>
               <div>
-                <div class="t-mono">Per plane</div>
+                <div class="t-mono">Water use</div>
                 <div style="font-size:24px;font-weight:200;margin-top:6px">
-                  9
+                  Zero
                 </div>
               </div>
             </div>
@@ -4018,7 +4017,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           </div>
           <div style="grid-column:7 / span 5">
             <p class="t-eyebrow" data-reveal="up-sm">
-              Northern Europe's largest satellite line
+              Australia's first sovereign compute mesh
             </p>
             <h2
               class="t-h2"
@@ -4027,15 +4026,16 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="90"
               data-split="words"
             >
-              Halden Bay
+              Distributed Solar
               <br />
-              Assembly Campus
+              Compute Infrastructure
             </h2>
             <p class="t-body" data-reveal="up" data-delay="190">
-              On the outer shore of Halden Bay, the campus is the first
-              privately held satellite production line in the region, built
-              around a moving assembly cell rather than a set of static clean
-              benches.
+              Across Australian territory, SmartGrids deploys micro-compute
+              nodes powered entirely by solar panels and LiFePO4 batteries.
+              Zero grid dependency. Zero marginal electricity cost. Each node
+              publishes a signed capability manifest and becomes schedulable
+              within the fabric.
             </p>
             <p
               class="t-body"
@@ -4043,10 +4043,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-reveal="up"
               data-delay="260"
             >
-              It carries integration and test under one roof: a 3,400&nbsp;m²
-              ISO-7 hall, a thermal-vacuum chamber rated to 4.2&nbsp;m, an
-              acoustic cell, a mission control annex and a space-environment
-              qualification lab. Nameplate capacity is 120 spacecraft a year.
+              Cell sizes range from Nano/Edge at 50–100 kW through Metro
+              clusters at 1–2 MW. Every cell is air-cooled — no water permits,
+              no cooling towers, no environmental impact. The mesh heals itself:
+              if one node goes down, workloads reroute automatically.
             </p>
             <div
               style="display:flex;gap:44px;margin-top:44px"
@@ -4054,21 +4054,21 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="330"
             >
               <div>
-                <div class="t-mono">Clean hall</div>
+                <div class="t-mono">Cell range</div>
                 <div style="font-size:24px;font-weight:200;margin-top:6px">
-                  3,400 m²
+                  50 kW–2 MW
                 </div>
               </div>
               <div>
-                <div class="t-mono">Capacity</div>
+                <div class="t-mono">Cooling</div>
                 <div style="font-size:24px;font-weight:200;margin-top:6px">
-                  120 / yr
+                  Air only
                 </div>
               </div>
               <div>
-                <div class="t-mono">Opened</div>
+                <div class="t-mono">Water</div>
                 <div style="font-size:24px;font-weight:200;margin-top:6px">
-                  2024
+                  Zero
                 </div>
               </div>
             </div>
@@ -4109,7 +4109,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           >
             <div class="center-col" style="grid-column:8 / span 5">
               <p class="t-eyebrow" data-reveal="up-sm">
-                Machine geospatial intelligence
+                Distributed AI processing
               </p>
               <h2
                 class="t-h2"
@@ -4118,15 +4118,16 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="90"
                 data-split="words"
               >
-                Orbital Data
+                Sovereign AI
                 <br />
-                Refinery
+                Processing
               </h2>
               <p class="t-body" data-reveal="up" data-delay="190">
-                Raw scenes are not intelligence. The refinery grafts learned
-                models onto the downlink so change is detected in the pass that
-                observed it — encroachment, thermal anomaly, flood extent, berth
-                occupancy, crop stress, infrastructure drift.
+                Raw compute is not intelligence. SmartGrids grafts learned models
+                onto distributed execution — running inference at the edge,
+                training across the mesh, and delivering results with
+                cryptographic provenance that proves every byte stayed under
+                Australian jurisdiction.
               </p>
               <p
                 class="t-body"
@@ -4134,9 +4135,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="260"
               >
-                It turns the planet into a queryable record and its next state
-                into a forecast — the part of the value chain that actually
-                reaches the people paying for the orbit.
+                It turns distributed infrastructure into a queryable compute
+                fabric. Every service — from AI inference to managed databases
+                to serverless functions — runs with the same sovereignty
+                guarantees and evidence trail.
               </p>
               <div
                 style="display:flex;gap:44px;margin-top:44px"
@@ -4144,21 +4146,21 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="330"
               >
                 <div>
-                  <div class="t-mono">Scenes / day</div>
+                  <div class="t-mono">Services</div>
                   <div style="font-size:24px;font-weight:200;margin-top:6px">
-                    28,000
+                    1,600+
                   </div>
                 </div>
                 <div>
-                  <div class="t-mono">Detect classes</div>
+                  <div class="t-mono">Revenue tiers</div>
                   <div style="font-size:24px;font-weight:200;margin-top:6px">
-                    64
+                    23
                   </div>
                 </div>
                 <div>
-                  <div class="t-mono">Latency</div>
+                  <div class="t-mono">Top margin</div>
                   <div style="font-size:24px;font-weight:200;margin-top:6px">
-                    9 min
+                    95%
                   </div>
                 </div>
               </div>
@@ -4175,7 +4177,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               id="loopWord"
               style="font-size:clamp(30px,4.6vw,64px);text-shadow:0 2px 40px rgba(0,0,0,.8)"
             >
-              Close the loop
+              Close the sovereignty gap
             </h2>
           </div>
         </div>
@@ -4194,7 +4196,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-reveal="up"
               data-split="words"
             >
-              Always-on, self-aware network
+              Always-on, policy-aware mesh
             </h2>
           </div>
           <div
@@ -4202,10 +4204,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             style="position:absolute;right:var(--gut);bottom:22%;width:min(410px,32vw)"
           >
             <p class="t-body" data-reveal="up" data-delay="220">
-              The same shell that carries voice and telemetry now carries
-              autonomy — extending to uncrewed mobility, sensor fleets and
-              industrial edge estates, and generating the hyper-converged data
-              layer that makes those systems answerable in real time.
+              The same fabric that carries AI inference now carries sovereignty
+              enforcement, evidence generation, and self-healing orchestration.
+              Policy determines eligibility. Optimisation determines preference.
+              A cheaper node never outranks a security restriction.
             </p>
           </div>
         </div>
@@ -4226,14 +4228,12 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               <span class="rv-mask">
                 <span class="rv-line">
-                  We are building the orbital layer for a habitable century,
+                  We are building the compute layer for a sovereign century,
                 </span>
               </span>
               <span class="rv-mask">
                 <span class="rv-line">
-                  with
-                  <span class="brandword">Aurora Link</span>
-                  technologies, from the first pass onward.
+                  with SmartGrids AI, from the first node onward.
                 </span>
               </span>
             </p>
@@ -4249,7 +4249,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
         style="height:280vh"
       >
         <div class="stage">
-          <div class="chapter-word t-chapter" id="deepWord">Deep Space</div>
+          <div class="chapter-word t-chapter" id="deepWord">Sovereignty</div>
           <div class="chapter-line" id="deepLines" style="top:58%">
             <p
               class="t-statement"
@@ -4257,12 +4257,12 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               <span class="rv-mask">
                 <span class="rv-line">
-                  Probes we launched decades ago still send pictures home.
+                  Data we generate today should stay under our own laws.
                 </span>
               </span>
               <span class="rv-mask">
                 <span class="rv-line">
-                  We are going back to the Moon to answer what they could not.
+                  We are building the infrastructure to guarantee that it does.
                 </span>
               </span>
             </p>
@@ -4290,7 +4290,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               <span class="rv-mask">
                 <span class="rv-line">
-                  Explore a sustainable future off-world.
+                  Explore a sustainable future on sovereign ground.
                 </span>
               </span>
             </p>
@@ -4300,11 +4300,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             style="position:absolute;left:var(--gut);bottom:11%;width:min(520px,44vw)"
           >
             <p class="t-body" data-reveal="up" data-delay="180">
-              Our first lunar orbiter,
-              <em style="font-style:normal;color:#fff">Vesper&nbsp;1</em>
-              , entered a 108&nbsp;km polar mission orbit in 2025 — the ninth
-              national programme to arrive intact — and has been surveying
-              candidate landing terrain ever since.
+              Australia's Privacy Act, SOCI Act, and Hosting Certification
+              Framework demand that sensitive data stays under Australian
+              jurisdiction. SmartGrids enforces this at the infrastructure
+              layer — not as a policy document, but as a technical guarantee
+              with cryptographic proof.
             </p>
           </div>
         </div>
@@ -4322,7 +4322,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           >
             <div class="center-col" style="grid-column:1 / span 4">
               <p class="t-eyebrow" data-reveal="up-sm">
-                Guide for the lunar orbiter
+                The placement brain
               </p>
               <h2
                 class="t-h2"
@@ -4331,17 +4331,16 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="90"
                 data-split="words"
               >
-                Orbiter Propulsion
+                iDOE Placement
                 <br />
-                System
+                Engine
               </h2>
               <p class="t-body" data-reveal="up" data-delay="190">
-                <em style="font-style:normal;color:#fff">Vesper&nbsp;1</em>
-                , launched in March 2025, flies a 108&nbsp;km mission orbit for
-                a two-year primary campaign, returning terrain, volatiles and
-                radiation data. The propulsion knowledge accumulated in building
-                and flying it feeds directly into the lunar descent module now
-                in design.
+                iDOE — the Intelligent Distributed Orchestration Engine —
+                decides where every workload runs. It operates on nine resource
+                dimensions: compute capacity, memory, storage, network
+                bandwidth, GPU availability, sovereignty zone, security
+                clearance, latency budget, and energy cost.
               </p>
               <p
                 class="t-mono"
@@ -4349,16 +4348,16 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="270"
               >
-                Aurora Link — Monopropellant Bus &nbsp;·&nbsp; PWR 21.4 N
+                SmartGrids AI — iDOE Policy Engine &nbsp;·&nbsp; 9 Dimensions
               </p>
             </div>
             <div class="center-col" style="grid-column:8 / span 4">
               <p class="t-body" data-reveal="up" data-delay="150">
-                It is a single-propellant system: thrust comes from decomposing
-                hydrazine across a catalyst bed. Because the transfer from Earth
-                to the Moon needs constant, predictable thrust, the feed runs
-                pressure-regulated, then switches to blow-down once the craft
-                has captured into its target orbit.
+                It is a two-stage system: first eliminate every resource that
+                fails hard constraints — sovereignty zone, security clearance,
+                capability minimums. Then rank the survivors by SLO alignment —
+                latency, cost, energy efficiency. The golden rule: policy
+                determines eligibility, optimisation determines preference.
               </p>
               <p
                 class="t-body"
@@ -4366,9 +4365,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="230"
               >
-                <em style="font-style:normal;color:#fff">Vesper&nbsp;1</em>
-                is the survey leg of a longer programme — its maps decide where
-                the Meridian landings actually put their feet down.
+                iDOE is the foundation of a longer programme. As the mesh
+                grows, placement becomes richer — more nodes, more capability
+                diversity, more policy dimensions. The engine scales with the
+                fabric.
               </p>
             </div>
           </div>
@@ -4404,9 +4404,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           >
             <div style="grid-column:1 / span 5">
               <h2 class="t-h2" data-reveal="up" data-split="words">
-                Living off what the
+                Running on what the
                 <br />
-                Moon already has.
+                sun already gives.
               </h2>
               <p
                 class="t-body"
@@ -4414,11 +4414,11 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="180"
               >
-                <span class="brandword">Aurora Link</span>
-                has signed a joint programme with seven public research
-                institutes to advance In-Situ Resource Utilisation — building
-                the industrial base for the New Space age and knitting a
-                domestic supply chain around it.
+                SmartGrids AI has designed every node for energy independence.
+                Solar panels generate power during the day. LiFePO4 batteries
+                store it for continuous operation. Zero grid dependency means
+                zero exposure to rising electricity costs — currently
+                AU$0.35/kWh and climbing.
               </p>
               <p
                 class="t-body"
@@ -4426,9 +4426,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-reveal="up"
                 data-delay="250"
               >
-                The work strengthens a shared platform rather than a single
-                company: shared test articles, shared qualification data, shared
-                risk.
+                The approach eliminates the two largest costs in traditional
+                data centre operations: electricity and water. No cooling
+                towers. No water permits. No diesel generators. Just sunlight,
+                batteries, and air.
               </p>
               <div
                 style="margin-top:44px;border:1px solid var(--ink-5);background:rgba(7,10,15,.72);padding:20px 24px;max-width:520px"
@@ -4436,13 +4437,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 data-delay="330"
               >
                 <div class="t-mono" style="color:var(--ember)">
-                  * In-Situ Resource Utilisation (ISRU)
+                  * Levelised Cost of Energy (LCOE)
                 </div>
                 <p class="t-cap" style="margin-top:10px">
-                  Producing what a mission needs where the mission is. Water,
-                  breathable oxygen, photovoltaic feedstock, construction
-                  regolith and launch propellant — made on the Moon, on Mars, or
-                  on the way there, instead of carried.
+                  The total cost of generating one unit of energy over a
+                  system's lifetime. Solar LCOE in Australia has fallen below
+                  grid parity, making distributed solar-powered compute
+                  economically superior to grid-connected hyperscale facilities.
                 </p>
               </div>
             </div>
@@ -4467,9 +4468,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               ></span>
               <div>
                 <h2 class="t-h2" data-reveal="up" data-split="words">
-                  Participation in the
+                  Alignment with
                   <br />
-                  Meridian Programme
+                  Five Eyes &amp; AUKUS
                 </h2>
                 <p
                   class="t-body"
@@ -4477,9 +4478,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                   data-reveal="up"
                   data-delay="180"
                 >
-                  The major spacefaring nations are executing detailed crewed
-                  exploration plans again, and competition now runs from the
-                  Moon to Mars.
+                  The major intelligence-sharing nations are executing detailed
+                  sovereign compute strategies. Australia's obligations under
+                  Five Eyes, AUKUS, and bilateral defence agreements demand
+                  infrastructure that foreign powers cannot compel access to.
                 </p>
               </div>
             </div>
@@ -4496,9 +4498,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 style="max-width:300px"
               ></div>
               <p class="t-body">
-                The Meridian Programme is a crewed lunar effort to assemble a
-                cislunar waystation and put four people on the surface —
-                including the first woman to walk there.
+                The CLOUD Act grants US law enforcement extraterritorial
+                jurisdiction over data stored on US-headquartered
+                infrastructure — regardless of where the server sits
+                physically. AWS, Azure, and GCP are all subject to it.
               </p>
             </div>
             <div data-reveal="up" data-delay="100">
@@ -4510,9 +4513,9 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 style="max-width:300px"
               ></div>
               <p class="t-body">
-                Its stated end goal is Mars: a permanent crewed base on the Moon
-                first, used as the proving ground and the staging point for
-                everything after it.
+                AUKUS Pillar II specifically identifies advanced AI and
+                autonomous systems as priority capabilities. Sovereign compute
+                infrastructure is a prerequisite, not a nice-to-have.
               </p>
             </div>
             <div data-reveal="up" data-delay="200">
@@ -4524,9 +4527,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 style="max-width:300px"
               ></div>
               <p class="t-body">
-                Thirty-one states have now signed the Meridian Accords for
-                international cooperation. Aurora Link's home nation became the
-                fourteenth signatory in 2024.
+                Australia's IRAP certification, Hosting Certification Framework,
+                and SOCI Act create a compliance landscape that demands provably
+                sovereign infrastructure — not just contractual promises, but
+                technical enforcement.
               </p>
             </div>
             <div data-reveal="up" data-delay="300">
@@ -4538,9 +4542,10 @@ html.is-ready #hero .cx-stage > * { animation: none; }
                 style="max-width:300px"
               ></div>
               <p class="t-body">
-                Through that participation we are developing surface-utilisation
-                technology and treating lunar operations as the stepping stone
-                toward deep-space exploration, Mars included.
+                Through alignment with these frameworks, SmartGrids is
+                developing the infrastructure that lets Australia meet its
+                alliance obligations without surrendering data sovereignty to
+                foreign commercial providers.
               </p>
             </div>
           </div>
@@ -4562,19 +4567,17 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               <span class="rv-mask">
                 <span class="rv-line">
-                  In this era of exploration
-                  <span class="brandword">Aurora Link</span>
-                  will keep
+                  In this era of AI, SmartGrids will keep
                 </span>
               </span>
               <span class="rv-mask">
                 <span class="rv-line">
-                  taking on the hard problems — and becoming a global
+                  solving the sovereignty equation — and becoming a national
                 </span>
               </span>
               <span class="rv-mask">
                 <span class="rv-line">
-                  leader in the industry through what it chooses to build.
+                  asset through what it chooses to protect.
                 </span>
               </span>
             </p>
@@ -4591,7 +4594,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
         <div class="grid12" style="padding-block:clamp(96px,14vh,180px)">
           <div style="grid-column:1 / span 5">
             <p class="t-eyebrow" data-reveal="up-sm">
-              Lift systems &amp; access
+              Platform tiers &amp; access
             </p>
             <h2
               class="t-h2"
@@ -4602,15 +4605,14 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               Three ways onto
               <br />
-              the shell.
+              the mesh.
             </h2>
           </div>
           <div style="grid-column:8 / span 5">
             <p class="t-body" data-reveal="up" data-delay="160">
-              Access is sold the way orbit actually works — by plane, mass and
-              how much of the operation you want to keep. Indicative figures
-              below are for a 550&nbsp;km sun-synchronous insertion; anything
-              outside that is quoted against the mission profile.
+              Access scales with your needs. Start free, grow to enterprise
+              SLAs, or deploy sovereign government workloads — all on the same
+              distributed fabric.
             </p>
           </div>
 
@@ -4625,24 +4627,24 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-cursor=""
             >
               <div class="idx-num">01</div>
-              <h3 class="t-index" style="margin:16px 0 8px">Rideshare</h3>
+              <h3 class="t-index" style="margin:16px 0 8px">Developer</h3>
               <p class="t-cap">
-                Shared plane, fixed manifest window, four launches a year.
+                Free tier, instant CLI setup, community support.
               </p>
               <div class="tier-price" style="margin:28px 0 6px">
-                € 24k
+                $0
                 <span style="font-size:14px;color:var(--ink-3);font-weight:300">
-                  / kg
+                  / month
                 </span>
               </div>
               <div class="ticks" style="width:60px;margin:22px 0 20px"></div>
               <ul
                 style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px"
               >
-                <li class="t-cap">Up to 180 kg per slot</li>
-                <li class="t-cap">SSO 550 km ± 25 km</li>
-                <li class="t-cap">Standard separation ring</li>
-                <li class="t-cap">Shared telemetry downlink</li>
+                <li class="t-cap">Up to 100K inference tokens / month</li>
+                <li class="t-cap">Full API gateway access</li>
+                <li class="t-cap">Community support &amp; docs</li>
+                <li class="t-cap">Shared mesh resources</li>
               </ul>
             </div>
             <div
@@ -4653,24 +4655,24 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-cursor=""
             >
               <div class="idx-num">02</div>
-              <h3 class="t-index" style="margin:16px 0 8px">Dedicated</h3>
+              <h3 class="t-index" style="margin:16px 0 8px">Enterprise</h3>
               <p class="t-cap">
-                Your plane, your window, your dispenser geometry.
+                Dedicated resources, SLA guarantees, priority support.
               </p>
               <div class="tier-price" style="margin:28px 0 6px">
-                € 6.8M
+                Custom
                 <span style="font-size:14px;color:var(--ink-3);font-weight:300">
-                  / launch
+                  / month
                 </span>
               </div>
               <div class="ticks" style="width:60px;margin:22px 0 20px"></div>
               <ul
                 style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px"
               >
-                <li class="t-cap">Up to 1,150 kg to SSO</li>
-                <li class="t-cap">Any inclination, any RAAN</li>
-                <li class="t-cap">Custom dispenser &amp; sequencing</li>
-                <li class="t-cap">Dedicated ground pass allocation</li>
+                <li class="t-cap">Unlimited inference tokens</li>
+                <li class="t-cap">99.9% SLA guarantee</li>
+                <li class="t-cap">Dedicated account manager</li>
+                <li class="t-cap">Custom deployment topology</li>
               </ul>
             </div>
             <div
@@ -4681,19 +4683,19 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-cursor=""
             >
               <div class="idx-num">03</div>
-              <h3 class="t-index" style="margin:16px 0 8px">Managed shell</h3>
+              <h3 class="t-index" style="margin:16px 0 8px">Government</h3>
               <p class="t-cap">
-                We fly and replenish the constellation; you consume the service.
+                IRAP-certified sovereign compute with evidence-first execution.
               </p>
               <div class="tier-price" style="margin:28px 0 6px">Quoted</div>
               <div class="ticks" style="width:60px;margin:22px 0 20px"></div>
               <ul
                 style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px"
               >
-                <li class="t-cap">Bus, payload, launch &amp; operations</li>
-                <li class="t-cap">Rolling replenishment cadence</li>
-                <li class="t-cap">Refinery data products included</li>
-                <li class="t-cap">99.4 % contracted availability</li>
+                <li class="t-cap">Full sovereignty enforcement</li>
+                <li class="t-cap">Cryptographic execution receipts</li>
+                <li class="t-cap">IRAP &amp; HCF aligned</li>
+                <li class="t-cap">99.4% contracted availability</li>
               </ul>
             </div>
           </div>
@@ -4704,39 +4706,39 @@ html.is-ready #hero .cx-stage > * { animation: none; }
       <section class="sec" style="min-height:80vh;background:#000">
         <div class="grid12" style="padding-block:clamp(80px,11vh,150px)">
           <div style="grid-column:1 / span 3">
-            <p class="t-eyebrow" data-reveal="up-sm">Operator signals</p>
+            <p class="t-eyebrow" data-reveal="up-sm">Partner signals</p>
           </div>
           <div
             style="grid-column:5 / span 8;display:flex;flex-direction:column;gap:clamp(48px,6vh,80px)"
           >
             <figure style="margin:0" data-reveal="up">
               <blockquote class="quote" style="margin:0">
-                “We stopped designing around coverage gaps. The handover between
-                beams is now invisible to our flight-deck software, which means
-                we deleted an entire fallback path from the avionics build.”
+                “We stopped architecting around hyperscaler lock-in the day
+                SmartGrids showed us inference running on CPUs at a tenth of
+                the cost.”
               </blockquote>
-              <figcaption class="t-mono" style="margin-top:22px">
-                Ines Halvorsen · Head of Connected Fleet, Nordwing Air
+              <figcaption class=”t-mono” style=”margin-top:22px”>
+                Sarah Chen · CTO, Meridian Health Systems
               </figcaption>
             </figure>
             <figure style="margin:0" data-reveal="up" data-delay="120">
               <blockquote class="quote" style="margin:0">
-                “The refinery flags berth occupancy before our own port systems
-                do. Nine minutes from pass to alert has changed how we schedule
-                pilots.”
+                “The evidence plane flags compliance issues before our own audit
+                systems do. Every execution receipt is independently
+                verifiable.”
               </blockquote>
-              <figcaption class="t-mono" style="margin-top:22px">
-                Tomasz Brandt · Operations Director, Meridian Harbour Authority
+              <figcaption class=”t-mono” style=”margin-top:22px”>
+                James Okafor · Director of Security, Pacific Infrastructure Group
               </figcaption>
             </figure>
             <figure style="margin:0" data-reveal="up" data-delay="240">
               <blockquote class="quote" style="margin:0">
-                “138 kilograms with a real radar on it changed the arithmetic
-                for us. We replenish now instead of nursing a spacecraft through
-                year eight.”
+                “Solar-powered, air-cooled, zero water — and it actually
+                performs. That changed the arithmetic for our sustainability
+                targets.”
               </blockquote>
-              <figcaption class="t-mono" style="margin-top:22px">
-                Dr. Amara Osei · Programme Lead, Continental Earth Watch
+              <figcaption class=”t-mono” style=”margin-top:22px”>
+                Dr. Lisa Nguyen · Head of Sustainable IT, Continental Resources
               </figcaption>
             </figure>
           </div>
@@ -4747,7 +4749,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
       <section class="sec" style="min-height:80vh;background:#000">
         <div class="grid12" style="padding-block:clamp(80px,11vh,150px)">
           <div style="grid-column:1 / span 4">
-            <p class="t-eyebrow" data-reveal="up-sm">Mission questions</p>
+            <p class="t-eyebrow" data-reveal="up-sm">Common questions</p>
             <h2
               class="t-h2"
               style="margin:20px 0 0"
@@ -4757,93 +4759,90 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               Before you
               <br />
-              book a plane.
+              get started.
             </h2>
           </div>
           <div style="grid-column:6 / span 7" id="faq">
             <div class="faq-item" data-reveal="up-sm">
               <button class="faq-q" type="button" data-cursor="">
-                How long from contract to insertion?
+                How long from signup to deployment?
                 <span class="faq-sign"></span>
               </button>
               <div class="faq-a">
                 <div>
                   <p class="t-body" style="padding-bottom:26px">
-                    Rideshare slots run on a fixed quarterly manifest, so the
-                    practical answer is the next window with capacity —
-                    typically eleven to nineteen weeks. Dedicated missions
-                    average nine months from signature, of which about five are
-                    yours: bus integration, environmental test and the range
-                    paperwork.
+                    Developer tier is instant — run
+                    <code>npx smartgrids init</code> and deploy in under five
+                    seconds. Enterprise contracts typically activate within two
+                    working days. Government engagements follow IRAP
+                    certification timelines.
                   </p>
                 </div>
               </div>
             </div>
             <div class="faq-item" data-reveal="up-sm" data-delay="60">
               <button class="faq-q" type="button" data-cursor="">
-                Can the aperture be retro-fitted to an existing airframe or
-                hull?
+                Can SmartGrids integrate with our existing cloud
+                infrastructure?
                 <span class="faq-sign"></span>
               </button>
               <div class="faq-a">
                 <div>
                   <p class="t-body" style="padding-bottom:26px">
-                    Yes — that was the design constraint. At 41 mm the panel
-                    bonds to a conformal mount without a radome and without
-                    penetrating primary structure. Retro-fit kits exist for the
-                    four most common commercial airframes and for standard mast
-                    and container geometries; anything else needs a two-week fit
-                    survey.
+                    Yes — that was the design constraint. SmartGrids is an
+                    infrastructure-independent software platform. It connects
+                    and coordinates compute across your existing facilities,
+                    private data centres, and even commercial cloud resources
+                    while enforcing sovereignty policy across all of them.
                   </p>
                 </div>
               </div>
             </div>
             <div class="faq-item" data-reveal="up-sm" data-delay="120">
               <button class="faq-q" type="button" data-cursor="">
-                What happens to a session when a craft leaves the footprint?
+                What happens to a workload when a node goes offline?
                 <span class="faq-sign"></span>
               </button>
               <div class="faq-a">
                 <div>
                   <p class="t-body" style="padding-bottom:26px">
-                    Nothing visible. The Edge Flight Processor plans the
-                    handover in orbit and pre-positions the next beam before the
-                    current one degrades, so the transition is a re-point rather
-                    than a re-connect. Measured session continuity across a full
-                    pass is 99.94 %.
+                    Nothing visible. The iDOE orchestration engine plans the
+                    handover before the node degrades. Workloads migrate to the
+                    nearest eligible node that passes all policy constraints.
+                    The mesh heals itself — failure is a control loop, not an
+                    exception.
                   </p>
                 </div>
               </div>
             </div>
             <div class="faq-item" data-reveal="up-sm" data-delay="180">
               <button class="faq-q" type="button" data-cursor="">
-                Who owns the imagery the refinery produces?
+                Who owns the data processed on SmartGrids?
                 <span class="faq-sign"></span>
               </button>
               <div class="faq-a">
                 <div>
                   <p class="t-body" style="padding-bottom:26px">
-                    You own the tasked scene and every derived product from it.
-                    We retain the right to use anonymised detections to improve
-                    model performance, and you can opt out of that at contract
-                    stage without a price change.
+                    You own every byte of input data and every derived output.
+                    SmartGrids never takes ownership of customer data. Every
+                    execution receipt cryptographically proves jurisdiction,
+                    policy version, and data boundary compliance.
                   </p>
                 </div>
               </div>
             </div>
             <div class="faq-item" data-reveal="up-sm" data-delay="240">
               <button class="faq-q" type="button" data-cursor="">
-                Is there a de-orbit commitment?
+                Is there a data deletion guarantee?
                 <span class="faq-sign"></span>
               </button>
               <div class="faq-a">
                 <div>
                   <p class="t-body" style="padding-bottom:26px">
-                    Every Aurora Link bus carries enough propellant margin for a
-                    controlled de-orbit inside five years of end-of-life, and we
-                    will not manifest a customer spacecraft that cannot
-                    demonstrate the same. Debris posture is a launch condition,
-                    not a preference.
+                    Every SmartGrids node enforces data lifecycle policy at the
+                    hardware level. When a workload completes or a retention
+                    period expires, cryptographic erasure is performed and
+                    receipted. The evidence plane proves deletion occurred.
                   </p>
                 </div>
               </div>
@@ -4855,16 +4854,16 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="300"
             >
               <button class="faq-q" type="button" data-cursor="">
-                Do you fly non-commercial payloads?
+                Do you support non-commercial workloads?
                 <span class="faq-sign"></span>
               </button>
               <div class="faq-a">
                 <div>
                   <p class="t-body" style="padding-bottom:26px">
-                    Research and civil-agency payloads fly on the same manifest
-                    under an academic rate. Two rideshare slots per launch are
-                    held for university and public-institute instruments and are
-                    allocated by a standing review panel rather than by price.
+                    Research and public-sector workloads run on the same mesh
+                    at the same quality of service. University, hospital, and
+                    civil-agency compute is a core part of the SmartGrids
+                    mission — not an afterthought.
                   </p>
                 </div>
               </div>
@@ -4882,7 +4881,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
           style="padding-block:clamp(90px,13vh,170px);align-items:end"
         >
           <div style="grid-column:1 / span 7">
-            <p class="t-eyebrow" data-reveal="up-sm">Next window</p>
+            <p class="t-eyebrow" data-reveal="up-sm">Get started</p>
             <h2
               class="t-h2"
               style="margin:20px 0 0;font-size:clamp(30px,4.4vw,62px)"
@@ -4893,13 +4892,13 @@ html.is-ready #hero .cx-stage > * { animation: none; }
             >
               Tell us what you
               <br />
-              need to see.
+              need to compute.
             </h2>
           </div>
           <div style="grid-column:9 / span 4">
             <p class="t-body" data-reveal="up" data-delay="180">
-              Manifest enquiries, aperture fit surveys and refinery trials all
-              start in the same place. We answer inside two working days.
+              Developer access, enterprise enquiries, and sovereign compute
+              briefings — our team responds within two working days.
             </p>
             <div
               style="display:flex;gap:14px;margin-top:34px;flex-wrap:wrap"
@@ -4907,15 +4906,15 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               data-delay="260"
             >
               <a
-                href="mailto:connect@auroralink.space"
+                href="mailto:hello@smartgrids.ai"
                 class="btn btn-solid"
                 data-cursor=""
               >
-                Start an enquiry
+                Start building
                 <i class="ring"></i>
               </a>
               <a href="#lift" class="btn btn-ghost" data-cursor="">
-                See lift options
+                See pricing tiers
                 <span class="arw">↳</span>
               </a>
             </div>
@@ -4961,7 +4960,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               ></ellipse>
               <circle cx="13" cy="13" r="3.1" fill="currentColor"></circle>
             </svg>
-            <span>Calyx Aerospace</span>
+            <span>RapidStart</span>
           </a>
           <a class="foot-logo" href="#top" data-cursor="">
             <svg
@@ -4991,7 +4990,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               ></ellipse>
               <circle cx="13" cy="13" r="3.1" fill="currentColor"></circle>
             </svg>
-            <span>Calyx Systems</span>
+            <span>SmartGrids</span>
           </a>
           <a class="foot-logo" href="#top" data-cursor="">
             <svg
@@ -5021,29 +5020,29 @@ html.is-ready #hero .cx-stage > * { animation: none; }
               ></ellipse>
               <circle cx="13" cy="13" r="3.1" fill="currentColor"></circle>
             </svg>
-            <span>Calyx Group</span>
+            <span>RapidEngine</span>
           </a>
         </div>
 
         <div style="grid-column:8 / span 3;margin-top:clamp(40px,6vh,72px)">
-          <a class="foot-link" href="#top" data-cursor="">Aurora Link</a>
-          <a class="foot-link" href="#lift" data-cursor="">LIFT SYSTEMS</a>
-          <a class="foot-link" href="#satellite" data-cursor="">SATELLITE</a>
-          <a class="foot-link" href="#deepspace" data-cursor="">DEEP SPACE</a>
-          <a class="foot-link" href="#newsroom" data-cursor="">NEWSROOM</a>
+          <a class="foot-link" href="#top" data-cursor="">SmartGrids AI</a>
+          <a class="foot-link" href="#lift" data-cursor="">INFRASTRUCTURE</a>
+          <a class="foot-link" href="#satellite" data-cursor="">TECHNOLOGY</a>
+          <a class="foot-link" href="#deepspace" data-cursor="">SOVEREIGNTY</a>
+          <a class="foot-link" href="#newsroom" data-cursor="">SOLUTIONS</a>
 
           <a
-            href="mailto:connect@auroralink.space"
+            href="mailto:hello@smartgrids.ai"
             class="foot-link"
             style="margin-top:34px;color:#fff"
             data-cursor=""
           >
-            connect@auroralink.space
+            hello@smartgrids.ai
           </a>
           <p class="t-cap" style="margin-top:14px;font-size:12.5px">
-            © 2026 Calyx Aerospace, Calyx Systems, Calyx Group.
+            © 2026 RapidStart Pty Ltd. All rights reserved.
             <br />
-            All rights reserved.
+            100% Australian Owned &amp; Operated.
           </p>
         </div>
 
@@ -5073,7 +5072,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
       <div
         class="megamark wordmark"
         id="megamark"
-        aria-label="Aurora Link"
+        aria-label="SmartGrids AI"
       ></div>
     </footer>
     <script type="importmap">
@@ -8669,24 +8668,24 @@ html.is-ready #hero .cx-stage > * { animation: none; }
       });
 
       const NEWS = [
-        [ { t: 'Aurora Link unveils first sub-metre scenes from the Compact SAR demonstrator', k: 'Press', art: 'p_sar' },
-          { t: 'Calyx Systems presents its full orbital stack at the Lisbon Space Forum', k: 'Press', art: 'p_booth' },
-          { t: 'Halden Bay campus clears ISO-7 certification eight weeks ahead of schedule', k: 'Press', art: 'p_campus' },
-          { t: 'Aurora Link to fly the Vega-class launcher six times in 2027', k: 'Press', art: 'p_launch' },
-          { t: 'Refinery detections open to civil-agency partners under a shared licence', k: 'Press', art: 'p_geo' },
-          { t: 'Calyx Group signs a seven-institute agreement on lunar resource utilisation', k: 'Press', art: 'p_moon' } ],
-        [ { t: 'Radar never sleeps — a night in the Halden Bay operations room', k: 'Broadcast', art: 'b_sar' },
-          { t: 'How a stadium roof gets its own beam on match night', k: 'Broadcast', art: 'b_geo' },
-          { t: 'From code to the constellation: meet the flight-software team', k: 'Broadcast', art: 'b_booth' },
-          { t: 'Who is actually going back to the Moon, and when', k: 'Broadcast', art: 'b_moon' },
-          { t: 'Forty-one millimetres: building an aperture you can bond to a wing', k: 'Broadcast', art: 'b_apa' },
-          { t: 'The nine-minute pass, explained end to end', k: 'Broadcast', art: 'b_campus' } ],
-        [ { t: 'Aurora Link — connecting ground, air and orbit', k: 'Archive', art: 'a_geo' },
-          { t: 'Optical Cross-Link (OCL) programme overview', k: 'Archive', art: 'a_ocl' },
-          { t: 'Vesper 1 lunar orbiter — mission dossier', k: 'Archive', art: 'a_moon' },
-          { t: 'Skyframe Imager technical bulletin, third edition', k: 'Archive', art: 'a_apa' },
-          { t: 'Halden Bay assembly line — facility handbook', k: 'Archive', art: 'a_campus' },
-          { t: 'Debris posture and end-of-life commitments', k: 'Archive', art: 'a_launch' } ]
+        [ { t: 'SmartGrids AI demonstrates SyntriRX CPU-native inference at 850B parameters', k: 'Press', art: 'p_sar' },
+          { t: 'RapidStart presents distributed sovereign compute at the Melbourne Tech Summit', k: 'Press', art: 'p_booth' },
+          { t: 'First 42U solar-powered compute node deployed and operational', k: 'Press', art: 'p_campus' },
+          { t: 'SmartGrids secures pre-feasibility partnership for 4-node demonstrator pilot', k: 'Press', art: 'p_launch' },
+          { t: 'Evidence plane opens to government and civil-agency partners', k: 'Press', art: 'p_geo' },
+          { t: 'RapidStart signs sovereign compute MOU with Australian defence research institute', k: 'Press', art: 'p_moon' } ],
+        [ { t: 'Solar never sleeps — a night in the SmartGrids operations centre', k: 'Broadcast', art: 'b_sar' },
+          { t: 'How a hospital gets its own sovereign compute node', k: 'Broadcast', art: 'b_geo' },
+          { t: 'From code to the mesh: meet the platform engineering team', k: 'Broadcast', art: 'b_booth' },
+          { t: 'Who is actually building sovereign AI infrastructure, and when', k: 'Broadcast', art: 'b_moon' },
+          { t: 'Ten times cheaper: building a CPU-native inference engine', k: 'Broadcast', art: 'b_apa' },
+          { t: 'The policy-first placement engine, explained end to end', k: 'Broadcast', art: 'b_campus' } ],
+        [ { t: 'SmartGrids AI — distributed sovereign compute for the AI era', k: 'Archive', art: 'a_geo' },
+          { t: 'SyntriRX CPU-native inference engine overview', k: 'Archive', art: 'a_ocl' },
+          { t: 'IPvX identity and policy layer — architecture dossier', k: 'Archive', art: 'a_moon' },
+          { t: 'RapidEngine API gateway technical bulletin', k: 'Archive', art: 'a_apa' },
+          { t: 'Solar compute infrastructure — deployment handbook', k: 'Archive', art: 'a_campus' },
+          { t: 'Data sovereignty compliance and evidence trail commitments', k: 'Archive', art: 'a_launch' } ]
       ];
       /* Newsroom imagery — NASA photographs, one per story. Keys are per-story so
          no image repeats across the three tabs; credits in assets/SOURCES.md.   */
@@ -8760,7 +8759,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
          ══════ */
       const mega = document.getElementById('megamark');
       if (mega) {
-        mega.innerHTML = [...'Aurora Link'].map(c => `<span>${c === ' ' ? '&nbsp;' : c}</span>`).join('');
+        mega.innerHTML = [...'SmartGrids AI'].map(c => `<span>${c === ' ' ? '&nbsp;' : c}</span>`).join('');
         if (!REDUCED && matchMedia('(hover:hover)').matches) {
           const letters = [...mega.querySelectorAll('span')];
           const state = letters.map(() => ({ c: 0, t: 0 }));
