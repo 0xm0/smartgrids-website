@@ -4,15 +4,11 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import TextShimmer from "@/components/TextShimmer";
 
-const ConstellationField = dynamic(
+const AuroraLinkLandingPage = dynamic(
   () =>
-    import("@designcodeio/threeui").then((mod) => mod.ConstellationField),
-  { ssr: false }
-);
-
-const ParticleNetwork = dynamic(
-  () =>
-    import("@designcodeio/threeui").then((mod) => mod.ParticleNetwork),
+    import("@/shaders/aurora-link-landing-page/AuroraLinkLandingPage").then(
+      (mod) => mod.AuroraLinkLandingPage
+    ),
   { ssr: false }
 );
 
@@ -113,10 +109,10 @@ const techHighlights = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero — ThreeUI Constellation */}
+      {/* Hero — ThreeUI Aurora Link */}
       <section className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <ConstellationField />
+          <AuroraLinkLandingPage style={{ width: "100%", height: "100%" }} />
         </div>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center">
           <TextShimmer className="mb-4 text-sm font-semibold uppercase tracking-widest">
