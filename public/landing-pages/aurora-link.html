@@ -8802,7 +8802,7 @@ html.is-ready #hero .cx-stage > * { animation: none; }
       function loadMap(src) {
         return new Promise((res, rej) => {
           const im = new Image();
-          const timeout = setTimeout(() => rej(new Error('Earth map timed out')), 10000);
+          const timeout = setTimeout(() => rej(new Error('Earth map timed out')), 30000);
           /* the maps are hosted cross-origin now, and the Cortexa hero reads the
              elevation map back with getImageData — without this the canvas is
              tainted and that read throws */

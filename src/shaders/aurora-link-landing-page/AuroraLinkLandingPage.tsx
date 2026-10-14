@@ -39,14 +39,14 @@ export function AuroraLinkLandingPage({ className = "", style }: AuroraLinkLandi
   }, [mounted]);
 
   return (
-    <div ref={hostRef} className={`threeui-background aurora-link-landing-page${className ? ` ${className}` : ""}`} role="group" aria-label="Interactive Aurora Link aerospace landing page" data-state={!mounted ? "paused" : ready ? "ready" : "loading"} style={{ position: "relative", overflow: "hidden", background: "#05080b", pointerEvents: "auto", ...style }}>
+    <div ref={hostRef} className={`threeui-background aurora-link-landing-page${className ? ` ${className}` : ""}`} role="group" aria-label="SmartGrids AI interactive landing page" data-state={!mounted ? "paused" : ready ? "ready" : "loading"} style={{ position: "relative", overflow: "hidden", background: "#05080b", pointerEvents: "auto", ...style }}>
       {mounted ? (
-        <iframe ref={frameRef} title="Aurora Link — Satellite" src="/landing-pages/aurora-link.html" sandbox="allow-scripts" loading="eager" onLoad={() => setPainted(true)} style={{ position: "absolute", inset: 0, display: "block", width: "100%", height: "100%", border: 0, background: "#05080b" }} />
+        <iframe ref={frameRef} title="SmartGrids AI" src="/landing-pages/aurora-link.html" sandbox="allow-scripts allow-same-origin" loading="eager" onLoad={() => setPainted(true)} style={{ position: "absolute", inset: 0, display: "block", width: "100%", height: "100%", border: 0, background: "#05080b" }} />
       ) : null}
       {mounted && !painted ? (
         <div role="status" style={{ position: "absolute", inset: 0, display: "grid", placeContent: "center", gap: 16, textAlign: "center", fontFamily: "system-ui, sans-serif", color: "#dceafa", background: "#05080b", pointerEvents: "none" }}>
-          <span style={{ fontSize: 26, fontWeight: 300 }}>Aurora Link</span>
-          <span style={{ fontSize: 12, color: "#9eb5cc" }}>Preparing flight systems</span>
+          <span style={{ fontSize: 26, fontWeight: 300 }}>SmartGrids AI</span>
+          <span style={{ fontSize: 12, color: "#9eb5cc" }}>Initialising compute nodes</span>
         </div>
       ) : null}
     </div>
